@@ -1,0 +1,88 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+
+.account {
+  max-width: 420px;
+  margin: 3rem auto;
+  background: #fff;
+  padding: 2.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+.account .heading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+
+.account h4 {
+  text-align: left;
+  margin: 0.8rem 0 0.3rem;
+  font-weight: 600;
+  color: #444;
+  font-size: 1rem;
+}
+
+
+.account input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 1rem;
+  transition: border 0.3s ease;
+}
+
+.account input:focus {
+  border-color: #28a745; 
+  box-shadow: 0 0 6px rgba(40, 167, 69, 0.3);
+}
+
+
+.sbutton {
+  width: 100%;
+  padding: 0.9rem;
+  background: #28a745;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sbutton:hover {
+  background: #218838; 
+}
+
+@media (max-width: 500px) {
+  .account {
+    margin: 1rem;
+    padding: 1.6rem;
+  }
+
+  .account .heading {
+    font-size: 1.5rem;
+  }
+
+  .account h4 {
+    font-size: 0.95rem;
+  }
+
+  .sbutton {
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+}
