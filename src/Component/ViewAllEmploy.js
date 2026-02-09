@@ -19,14 +19,14 @@ const ViewAllEmploy = () => {
 
   const getData = async () => {
     const res = await axios.get(
-      "https://onestbackend-b051.onrender.com/api/emp/view"
+      "https://employee-b.onrender.com/api/emp/view"
     );
     setEmp(res.data.employ);
   };
 
   const Handledelete = async (id) => {
     await axios.delete(
-      `https://onestbackend-b051.onrender.com/api/emp/delete/${id}`
+      `https://employee-b.onrender.com/api/emp/delete/${id}`
     );
     getData();
   };
@@ -48,12 +48,12 @@ const ViewAllEmploy = () => {
 
     if (selectedId) {
       await axios.put(
-        `https://onestbackend-b051.onrender.com/api/emp/update/${selectedId}`,
+        `https://employee-b.onrender.com/api/emp/update/${selectedId}`,
         formData
       );
     } else {
       await axios.post(
-        "https://onestbackend-b051.onrender.com/api/emp/save",
+        "https://employee-b.onrender.com/api/emp/save",
         formData
       );
     }

@@ -22,7 +22,7 @@ function EmployeeForm() {
     e.preventDefault();
     console.log(formData);
     const res = await axios.post(
-      "https://onestbackend-b051.onrender.com/api/emp/save",
+      "https://employee-b.onrender.com/api/emp/save",
       formData
     );
     console.log(res);

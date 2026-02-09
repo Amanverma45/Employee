@@ -12,7 +12,7 @@ export default function SignUp() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5000/api/user/saveUser",
+      const res = await axios.post("https://employee-b.onrender.com/api/user/saveUser",
         {
           name,
           email,
